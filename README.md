@@ -14,7 +14,7 @@
 
 ## Configuration
 
-Open the src -> config -> index.js or other environment files
+Open the `src -> config -> index.js` or other environment files
 
 Email: The email service uses `gmail` by default
 Replace the placeholders with your actual email login details
