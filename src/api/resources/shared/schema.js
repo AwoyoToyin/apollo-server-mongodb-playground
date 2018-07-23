@@ -15,11 +15,11 @@ const Schema = gql`
 
     users(page: Int, limit: Int): UserCollection
     verifiedUsers(page: Int, limit: Int): UserCollection
-    user(_id: String!): UserOutput
+    user(_id: ID!): UserOutput
 
     fields(page: Int, limit: Int): FieldCollection
     trashedFields(page: Int, limit: Int): FieldCollection
-    field(_id: String!): FieldOutput
+    field(_id: ID!): FieldOutput
   }
 
   type Mutation {
@@ -34,8 +34,8 @@ const Schema = gql`
 
     createField(input: CreateFieldInput!): FieldOutput
     updateField(input: UpdateFieldInput!): FieldOutput
-    trashField(_id: String!): FieldOutput
-    deleteField(_id: String!): FieldOutput
+    trashField(_id: ID!): FieldOutput
+    deleteField(_id: ID!): FieldOutput
   }
 
   type Subscription {
